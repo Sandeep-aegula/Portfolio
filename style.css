@@ -16,7 +16,7 @@ body {
 
 .rainbow-shadow {
     color: white;
-    font-family: 'Pacifico', 'Brush Script MT', 'Lucida Handwriting';
+    font-family: 'Pacifico', 'Brush Script MT', 'Lucida Handwriting','Pacifico', cursive;
     text-shadow:
         5px 5px 5px rgb(236, 44, 201),
         -5px 5px 10px rgb(19, 212, 238),
