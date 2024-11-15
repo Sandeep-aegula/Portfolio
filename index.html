@@ -91,15 +91,17 @@
                         class="pointer-events-none text-4xl font-['Merriweather'] italic my-4 md:my-8 opacity-0 animate-fadeInScale delay-400">
                         <span id="output" class="rainbow-shadow ">FrontEnd Developer</span>
                     </p>
-                    <a href="https://drive.google.com/file/d/1qvX5GEyJ0YHj-AyTohjKhmGgchwhRruB/view?usp=sharing">
+                    <a href="https://drive.google.com/file/d/1qvX5GEyJ0YHj-AyTohjKhmGgchwhRruB/view?usp=sharing" 
+                        target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-block"> <!-- Line 4: Added class="inline-block" -->
                         <button
-                            class="relative  px-8 py-3  flex font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-lg shadow-lg hover:shadow-pink-500/50 hover:scale-105 opacity-0 animate-fadeInScale delay-400">
-                            <img class="pr-2" src="download.svg" alt="" srcset="">
-                            <p
-                                class="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-lg blur opacity-75 animate-pulse">
-                            </p>
-                            <p class="relative">Resume</p>
-                        </button></a>
+                            class="relative px-8 py-3 flex items-center font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-lg shadow-lg hover:shadow-pink-500/50 hover:scale-105 opacity-0 animate-fadeInScale delay-400">
+                            <img class="pr-2 relative z-10" src="download.svg" alt="Download Icon">
+                            <span class="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-lg blur opacity-75 animate-pulse"></span>
+                            <span class="relative z-10">Resume</span>
+                        </button>
+                    </a>
                 </div>
             </div>
             <ul class="ml-auto space-y-6 text-[#b0b2c3] absolute right-8 opacity-100 animate-fadeInScale ">
