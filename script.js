@@ -1,3 +1,15 @@
+window.addEventListener('scroll', () => {
+    const scrollToTopButton = document.getElementById('scrollToTop');
+    if (window.scrollY > window.innerHeight / 2) {
+        scrollToTopButton.classList.remove('hidden');
+    } else {
+        scrollToTopButton.classList.add('hidden');
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 document.addEventListener('click', function(e) {
     const circle = document.createElement('div');
     circle.classList.add('animation-effect');
@@ -11,7 +23,7 @@ document.addEventListener('click', function(e) {
     }, 500);
 });
 var typed = new Typed('#output', {
-    strings: ["FrontEnd Developer.", "Ui Designer."],
+    strings: ["MERN STACK Developer.", "Ui/UX Designer."],
     typeSpeed: 40,
     backSpeed: 0,
     fadeOut: true,
@@ -24,4 +36,3 @@ document.addEventListener('keydown', function (e) {
     // Check for specific key combinations 
     if (e.ctrlKey && (e.key === 'U' || e.key === 'u' || e.key === 'Shift' || e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) { e.preventDefault(); }
 });
-document.addEventListener('dblclick', () => { alert("Double click is Restricted!!"); });
