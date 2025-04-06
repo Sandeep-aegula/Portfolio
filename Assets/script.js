@@ -24,3 +24,4 @@ document.addEventListener('keydown', function (e) {
     // Check for specific key combinations 
     if (e.ctrlKey && (e.key === 'U' || e.key === 'u' || e.key === 'Shift' || e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) { e.preventDefault(); }
 });
+console.log("Welcome to my portfolio website!");

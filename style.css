@@ -1,134 +1,115 @@
 html,
 body {
-    margin: 0;
-    padding: 0%;
-    scroll-behavior: smooth;
-    font-family: "Black Ops One", system-ui;
-    user-select: none;
-    cursor: url('assets/svgcursor.svg'), auto;
-
-
+  margin: 0;
+  padding: 0%;
+  scroll-behavior: smooth;
+  font-family: "Black Ops One", system-ui;
+  user-select: none;
+  cursor: url("assets/svgcursor.svg"), auto;
 }
 
-
-
 .rainbow-shadow {
-    color: white;
-    font-family: "Black Ops One", system-ui;
-    text-shadow:
-        5px 5px 5px rgb(44, 63, 236),
-        -5px 5px 10px rgb(153, 37, 171),
-        5px -5px 10px rgb(89, 70, 235),
-        -5px -5px 10px rgb(0, 92, 190),
-        5px 0 5px rgb(247, 55, 221),
-        -5px 0 5px rgb(233, 218, 47),
-        0 5px 5px rgb(43, 62, 180),
-        0 -5px 5px rgb(79, 62, 235);
+  color: white;
+  font-family: "Black Ops One", system-ui;
+  text-shadow: 5px 5px 5px rgb(44, 63, 236), -5px 5px 10px rgb(153, 37, 171),
+    5px -5px 10px rgb(89, 70, 235), -5px -5px 10px rgb(0, 92, 190),
+    5px 0 5px rgb(247, 55, 221), -5px 0 5px rgb(233, 218, 47),
+    0 5px 5px rgb(43, 62, 180), 0 -5px 5px rgb(79, 62, 235);
 }
 
 @keyframes fadeInScale {
-    0% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
 
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .animate-fadeInScale {
-    animation: fadeInScale 1.5s ease-out forwards;
+  animation: fadeInScale 1.5s ease-out forwards;
 }
 
 .delay-200 {
-    animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .delay-400 {
-    animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
-
 .letter-transform {
-    display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .letter-transform:hover {
-    transform: rotate(180deg);
-    color: #fbbf24;
+  transform: rotate(180deg);
+  color: #fbbf24;
 }
 
 @media (max-width: 640px) {
-    .s-450 {
-        display: none;
-    }
+  .s-450 {
+    display: none;
+  }
 }
 
 @media (max-width: 380px) {
-    .w-380 {
-        display: none;
-        visibility: hidden;
+  .w-380 {
+    display: none;
+    visibility: hidden;
+  }
 
-    }
+  .h-380 {
+    display: block;
+    visibility: visible;
+  }
 
-    .h-380 {
-        display: block;
-        visibility: visible;
+  .rainbow-shadow {
+    font-size: 20px;
+  }
 
-    }
+  .i-see {
+    height: 30px;
+    width: 30px;
+  }
 
-    .rainbow-shadow {
-        font-size: 20px;
-    }
-
-    .i-see {
-        height: 30px;
-        width: 30px;
-    }
-
-    .bigs {
-        font-size: 40px;
-    }
+  .bigs {
+    font-size: 40px;
+  }
 }
 
-
 .animation-effect {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    /* border: 2px solid rgba(255, 255, 255, 0.7); */
-    border: 2px solid rgb(7, 0, 137);
-
-    border-radius: 50%;
-    pointer-events: none;
-    animation: scale-up 0.5s ease-out forwards;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(69, 66, 136);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: scale-up 0.5s ease-out forwards;
 }
 
 @keyframes scale-up {
-    to {
-        transform: scale(3);
-        opacity: 0;
-    }
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
 }
 
+.image {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  transition: opacity 1s ease;
+  border: 2px solid white;
+}
 
-  /* samesamebutdifferent */
-
-  .image {
-    position: relative;
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    transition: opacity 1s ease;
-    border: 2px solid white;
-  }
-
-  .black-ops-one-regular {
-    font-family: "Black Ops One", system-ui;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
