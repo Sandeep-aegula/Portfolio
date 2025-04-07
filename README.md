@@ -1,7 +1,7 @@
 # 🚀 Personal Portfolio - Sandeep Aegula
 
 Welcome to my personal portfolio website!  
-This site showcases my projects, skills, and journey as a full stack developer and UI/UX designer.
+This site showcases my projects, skills, and journey as a MERN stack developer and UI/UX designer.
 
 🔗 Live Site: [aegulasandeep.xyz](https://aegulasandeep.xyz)
 
