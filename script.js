@@ -36,3 +36,10 @@ document.addEventListener('keydown', function (e) {
     // Check for specific key combinations 
     if (e.ctrlKey && (e.key === 'U' || e.key === 'u' || e.key === 'Shift' || e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) { e.preventDefault(); }
 });
+const faders = document.querySelectorAll('.fade-up');
+window.addEventListener('scroll', () => {
+  faders.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) el.classList.add('visible');
+  });
+});
