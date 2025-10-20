@@ -51,18 +51,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-  
 
 </head>
 
 <body class="bg-[#111] text-white bg-[url('assets/background.svg')] black-ops-one-regular w-[100vw] h-[100vh]" id="right-click">
 
     <section class="flex flex-col h-screen top-0 justify-between ">
+        <!-- Header -->
         <header
-            class="z-10   pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto   opacity-0 animate-fadeInScale ">
+            class="z-10   pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto   opacity-0 animate-fadeInScale " data-animate="fade">
             <p class="rainbow-shadow   h-380" id="up">My Portfolio</p>
 
         </header>
+        <!-- Hero Section -->
         <div class="flex m-0 -mt-10 relative">
             <div class="w-full px-4 max-w-screen-xl mx-auto">
                 <span class="w-380">
@@ -80,7 +81,8 @@
                         </defs>
                         </svg>
                 </span>
-                <div class="relative ml-4 md:ml-12">
+                <!-- Add fade-in to hero text -->
+                <div class="relative ml-4 md:ml-12 fade-in delay-200" data-animate="fade">
                     <h1
                         class="pointer-events-none black-ops-one-regular  bigs font text-6xl md:text-[64px]  mr-12 opacity-0 animate-fadeInScale">
                         Aegula Sandeep
@@ -172,10 +174,10 @@
     </button>
 
     <!-- Skills -->
-    <div id="skills" class="skills-section w-[100%] pt-2  mb-[1rem] border-black-200">
+    <div id="skills" class="skills-section w-[100%] pt-2  mb-[1rem] border-black-200" data-animate="fade">
         <div
        
-            class=" align-middle  flex justify-center text-[40px] md:text-[50px] bg-clip-text text-transparent ">
+            class=" align-middle  flex justify-center text-[40px] md:text-[50px] bg-clip-text text-transparent fade-in delay-100">
             <span
             style="
               background: linear-gradient(180deg, rgb(46, 95, 209) 0%, rgb(92, 130, 183) 100%);
@@ -194,7 +196,7 @@
         class="grid grid-cols-4 md:grid-cols-8 font-mono justify-items-center content-center gap-y-6 md:gap-y-8 w-full max-w-screen-md mx-auto">
     
         <div
-          class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1]">
+          class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1] fade-in delay-200">
           <img title="Typescript" width="500" height="500" loading="lazy"
             class="size-[1.9rem] text-red-500 md:size-[2.3rem] bg-gradient-to-b from-[#2e5fd1] to-[#5c82b7] bg-clip-text text-transparent"
             style="color:transparent" src="assets/ts.svg" alt="Typescript">
@@ -202,77 +204,77 @@
         </div>
     
         <div
-          class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1]">
+          class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1] fade-in delay-300">
           <img title="JavaScript"  width="500" height="500" loading="lazy"
             class="size-[1.9rem] md:size-[2.3rem] "
             style="color:transparent" src="assets/Js.svg" alt="JavaScript">
          
         </div>
         <div
-          class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1]">
+          class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1] fade-in delay-400">
           <img   title="Next Js" width="500" height="500" loading="lazy"
             class="size-[1.9rem] md:size-[2.3rem] "
             style="color:transparent" src="assets/next.svg" alt="Next Js">
          
         </div>
         <div
-          class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1]">
+          class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1] fade-in delay-500">
           <img  title="React Js" width="500" height="500" loading="lazy"
             class="size-[1.9rem] md:size-[2.3rem] "
             style="color:transparent" src="assets/React.svg" alt="React Js">
         
         </div>
         <div
-          class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1]">
+          class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1] fade-in delay-600">
           <img  title="Tailwindcss" width="500" height="500" loading="lazy"
             class="size-[1.9rem] md:size-[2.3rem] "
             style="color:transparent" src="assets/Tailwindcss.svg" alt="Tailwindcss">
          
         </div>
         <div
-        class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1]">
+        class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1] fade-in delay-700">
         <img title="Express Js" width="500" height="500" loading="lazy"
           class="size-[1.9rem] md:size-[2.3rem] "
           style="color:transparent" src="assets/express-js.svg" alt="Express Js">
        
       </div>
       <div
-        class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1]">
+        class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1] fade-in delay-800">
         <img title="MongoDB" width="500" height="500" loading="lazy"
           class="size-[1.9rem] md:size-[2.3rem] "
           style="color:transparent" src="assets/mongodb.svg" alt="MongoDB">
      
       </div>
       <div
-      class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1]">
+      class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1] fade-in delay-900">
       <img title="SQL" width="500" height="500" loading="lazy"
         class="size-[1.9rem] md:size-[2.3rem] "
         style="color:transparent" src="assets/sql.svg" alt="sql">
    
     </div>
     <div
-    class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1]">
+    class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1] fade-in delay-1000">
     <img title="Git" width="500" height="500" loading="lazy"
       class="size-[1.9rem] md:size-[2.3rem] "
       style="color:transparent" src="assets/git.svg" alt="Git">
  
   </div>
       <div
-        class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1]">
+        class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1] fade-in delay-1100">
         <img title="GitHub"  width="500" height="500" loading="lazy"
           class="size-[1.9rem] md:size-[2.3rem] "
           style="color:transparent" src="assets/GitHub.svg" alt="GitHub">
        
       </div>
       <div
-        class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1]">
+        class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1] fade-in delay-1200">
         <img title="Python"  width="500" height="500" loading="lazy"
           class="size-[1.9rem] md:size-[2.3rem] "
           style="color:transparent" src="assets/python.svg" alt="Python">
        
       </div>
       <div
-        class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1]">
+        class=" skill group bg-[#2B2B2B] md::hover: md:hover:rounded-full transition-all ease-ease-in duration-700 size-[3.2rem] md:size-[4.1rem] rounded-md md:rounded-lg flex items-center justify-center shadow-custom shadow-[#b5a1a1] fade-in delay-1300">
         <img title="Figma"  width="500" height="500" loading="lazy"
           class="size-[1.9rem] md:size-[2.3rem] "
           style="color:transparent" src="assets/Figma.svg" alt="Figma">
@@ -287,9 +289,9 @@
     <p> <br><br><br> </p>
     <div class="md:block bg-blue-600 rounded h-1 px-2 mx-5 w-full sm:mx-3 sm:px-1 lg:mx-10 lg:px-4"></div>    <!-- Projects -->
     <br><br>
-    <section id="projects" class="pb-10">
+    <section id="projects" class="pb-10 fade-in" data-animate="fade">
         <div
-            class="align-middle flex justify-center text-[40px] md:text-[50px]  ">
+            class="align-middle flex justify-center text-[40px] md:text-[50px]  fade-in delay-100">
             <span
             style="
               background: linear-gradient(180deg, rgb(46, 95, 209) 0%, rgb(92, 130, 183) 100%);
@@ -303,7 +305,7 @@
         <br><br><br>
         <div class="flex flex-col items-center">
             <div class="relative w-11/12 px-5 max-w-xs md:max-w-5xl lg:max-w-full">
-                <div class="relative h-[100%] flex items-center  justify-end md:justify-start my-8">
+                <div class="relative h-[100%] flex items-center  justify-end md:justify-start my-8 fade-in delay-200">
                     <div
                         class="flex flex-col bg-[url('assets/images/Todo-list-app.jpg')]  bg-cover h-[200px] gap-y-1 w-64 md:min-w-72 border border-blue/70 bg-[#202020] text-white p-4 rounded-md shadow-md z-20">
                         <br><br><br>
@@ -322,7 +324,7 @@
                     </div>
                     <div class="z-10 absolute transform w-full md:w-1/2 h-[1px] bg-[#dbdbdb] left-0 md:right-1/2"></div>
                 </div>
-                <div class="relative flex items-center  justify-end  my-5">
+                <div class="relative flex items-center  justify-end  my-5 fade-in delay-300">
                     <div
                         class="flex items-center justify-center flex-col gap-y-1 w-64 md:min-w-72 bg-[url('assets/images/weatherforecast.jpg')] bg-center bg-cover h-[200px] border border-blue/70 bg-[#202020] text-white p-4 rounded-md shadow-md z-20">
                         <h2
@@ -341,7 +343,7 @@
                     </div>
                     <div class="z-10 absolute transform w-full md:w-1/2 h-[1px] bg-[#dbdbdb] left-0 md:left-1/2"></div>
                 </div>
-                <div class="relative flex items-center  justify-end md:justify-start my-8">
+                <div class="relative flex items-center  justify-end md:justify-start my-8 fade-in delay-400">
                     <div
                         class="flex flex-col bg-[url('assets/images/Calculator.jpg')]  bg-cover h-[200px] gap-y-1 w-64 md:min-w-72 border border-blue/70 bg-[#202020] text-white p-4 rounded-md shadow-md z-20">
                         <h2
@@ -356,7 +358,7 @@
                     </div>
                     <div class="z-10 absolute transform w-full md:w-1/2 h-[1px] bg-[#dbdbdb] left-0 md:right-1/2"></div>
                 </div>
-                <div class="relative flex items-center  justify-end  my-8">
+                <div class="relative flex items-center  justify-end  my-8 fade-in delay-500">
                     <div
                         class="flex flex-col bg-[url('assets/images/Temp-Convertor.jpg')]  bg-cover h-[200px] gap-y-1 w-64 md:min-w-72 border border-blue/70 bg-[#202020] text-white p-4 rounded-md shadow-md z-20">
                         <h2
@@ -390,7 +392,8 @@
     <div class=" md:block sm:hidden bg-blue-600 rounded h-1 px-2 mx-3 w-full"></div>
 
     <br><br><br>
-    <footer class="flex flex-col items-center bottom-0 pb-10">
+    <!-- Footer -->
+    <footer class="flex flex-col items-center bottom-0 pb-10 fade-in" data-animate="fade">
         <p class="text-xs text-gray-300">Aegula Sandeep &copy; 2025</p>
         <div class="black-logo my-4">
             <svg width="100" height="52" viewBox="0 0 178 182" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -424,6 +427,7 @@
                     <svg class="w-5 hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path fill="currentColor"
                             d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+           
                         </path>
                     </svg>
                 </a>
@@ -452,11 +456,7 @@
         </ul>
     </footer>
    
-
-
-   
 <script src="script.js"></script>
 </body>
 
 </html>
-
